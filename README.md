@@ -29,13 +29,12 @@ class Buble_sort():
 
 Si observamos el algoritmo vemos que su complejidad algorítmica es alta debido a los dos bucles necesarios para implementar el algoritmo, por lo que ***no sería un algoritmo muy efizac***. Esto conlleva que este algoritmo sea eficaz en pocas situaciones.
 
-* ¿Cuándo es recomendable usar este algoritmo?
+**¿CUÁNDO ES RECOMENDABLE USAR ESTE ALGORITMO?**
 
 - Cuando la lista tenga una cantidad de elementos pequeña
 - Cuando la lista se encuentre casi ordenada
 
-
-* ¿Cómo funciona el código?
+**¿CÓMO FUNCIONA EL CÓDIGO?**
 
 - El **primer bucle** nos permite ir reduciendo el límite superior; porque cada vez que recorramos toda la lista, sabemos que **al menos** el último elemento está ordenado, por lo que no es necesario compararlo en todas las iteraciones.
 

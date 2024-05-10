@@ -44,7 +44,18 @@ class Song():
         self.duration = duration
         self.release_date = release_date
         self.genres = genres
-
+        self.comprobar_genres()
+    
+    # Comprobar los Géneros
+    def comprobar_genres(self):
+      for genre in self.genres:
+        try:
+          if genre not in GENRE:
+            raise ValueError(f"Género no válido: {genre}")         
+        except ValueError as e:
+          print(e)
+          
+    
     # Getters
     def get_id(self):
         return self.id
